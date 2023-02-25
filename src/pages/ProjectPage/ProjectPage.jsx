@@ -1,7 +1,11 @@
 import React from "react";
 
 const ProjectPage = (props) => {
-  return <div>Project Page Placeholder</div>;
+  return (
+    <div className="container">
+      <h1>This is the projects page!</h1>
+    </div>
+  );
 };
 
 export default ProjectPage;
