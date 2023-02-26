@@ -16,7 +16,7 @@ const Header = (post) => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <ForestIcon
-            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+            sx={{ display: "flex", mr: 1 }}
             onClick={() => navigate(`/`)}
           />
           <Typography
@@ -26,7 +26,7 @@ const Header = (post) => {
             href="/"
             sx={{
               mr: 2,
-              display: { xs: "none", md: "flex" },
+              display: "flex",
               fontFamily: "Segoe UI",
               fontWeight: 700,
               letterSpacing: ".3rem",
@@ -34,12 +34,15 @@ const Header = (post) => {
               textDecoration: "none",
             }}
           >
-            Blog Name Here
+            Code & Explore
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: "flex" }}>
+          <Box
+            sx={{ flexGrow: 1, display: "flex", justifyContent: "flex-end" }}
+          >
             {pages.map((page) => (
               <Button
+                size="large"
                 key={page.link}
                 onClick={() => navigate(`/${page.link}`)}
                 sx={{ my: 2, color: "white", display: "block" }}
