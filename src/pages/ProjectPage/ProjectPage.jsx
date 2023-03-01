@@ -37,7 +37,7 @@ const ProjectPage = (props) => {
   return (
     <Container sx={{ mt: "1rem" }}>
       <Typography variant="h3" sx={{ mb: "2rem" }}>
-        This is the projects page!
+        My Portfolio
       </Typography>
       <Box sx={{ display: "flex", flexWrap: "row", gap: "1rem" }}>
         {projects.map((project) => (

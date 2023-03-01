@@ -1,10 +1,10 @@
 import React from "react";
-import { Container } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 
 const AboutPage = (props) => {
   return (
-    <Container>
-      <h1>This is the about me page!</h1>
+    <Container sx={{ mt: "1rem" }}>
+      <Typography variant="h3">About Me</Typography>
     </Container>
   );
 };
