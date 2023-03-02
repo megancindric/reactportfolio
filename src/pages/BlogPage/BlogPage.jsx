@@ -12,19 +12,25 @@ import {
 import BlogPost from "../../components/BlogPost/BlogPost";
 
 const BlogPage = (props) => {
+  const fakeEntries = [
+    "Thoughts on Sweeping",
+    "Down Dog through a Downswing",
+    "In Defense of Death",
+    "A Quiet Life",
+  ];
   return (
     <>
       <Container>
         {" "}
-        <Typography variant="h3" sx={{ mt: "1rem" }}>
-          Random Thoughts
+        <Typography variant="h3" sx={{ mt: "2rem" }}>
+          This is the blog!
         </Typography>
       </Container>
 
       <Container
         sx={{
           display: "flex",
-          paddingTop: "3rem",
+          paddingTop: "2rem",
 
           justifyContent: "space-between",
           gap: "3rem",
@@ -35,56 +41,29 @@ const BlogPage = (props) => {
         </Box>
         <Box
           sx={{
-            flexDirection: "column",
             minWidth: 300,
           }}
         >
           <Box
-            flexGrow={1}
             sx={{
-              border: "1px solid",
+              padding: "1rem",
+              border: "2px solid",
               borderRadius: "10px",
               borderColor: "#43A047",
-              padding: "1rem",
-              mb: "1rem",
+              height: "100%",
             }}
           >
-            <Typography variant="h5" gutterBottom sx={{ mb: "1rem" }}>
-              Search
+            <Typography variant="h5" textAlign={"center"} gutterBottom>
+              Past Entries
             </Typography>
-
-            <TextField id="outlined-basic" size="small" />
-          </Box>
-          <Box
-            sx={{
-              padding: "1rem",
-              border: "1px solid",
-              borderRadius: "10px",
-              borderColor: "#43A047",
-            }}
-          >
-            <Typography variant="h5">Categories</Typography>
             <List>
-              <ListItem>
-                <ListItemButton>
-                  <ListItemText primary="Coding" />
-                </ListItemButton>
-              </ListItem>
-              <ListItem>
-                <ListItemButton>
-                  <ListItemText primary="Thailand" />
-                </ListItemButton>
-              </ListItem>
-              <ListItem>
-                <ListItemButton>
-                  <ListItemText primary="Travels" />
-                </ListItemButton>
-              </ListItem>
-              <ListItem>
-                <ListItemButton>
-                  <ListItemText primary="Business" />
-                </ListItemButton>
-              </ListItem>
+              {fakeEntries.map((entry) => (
+                <ListItem disablePadding>
+                  <ListItemButton>
+                    <ListItemText primary={entry} />
+                  </ListItemButton>
+                </ListItem>
+              ))}
             </List>
           </Box>
         </Box>
