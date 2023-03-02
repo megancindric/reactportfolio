@@ -1,11 +1,7 @@
-import {
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  Typography,
-} from "@mui/material";
+import { Button, Card, CardContent, Typography } from "@mui/material";
 import React from "react";
+
+import TechIcon from "../TechIcon/TechIcon";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -15,14 +11,16 @@ const ProjectCard = ({ project }) => {
           {project.name}
         </Typography>
         {project.technologies.map((tech) => (
-          <Typography variant="overline">{tech} </Typography>
+          <TechIcon tech={tech} />
         ))}
         <Typography variant="body2" gutterBottom>
           {project.description}
         </Typography>
-        <Button size="small" variant="outlined">
-          Source Code
-        </Button>
+        <a href={project.repository} target="+blank">
+          <Button size="small" variant="outlined">
+            Source Code
+          </Button>
+        </a>
       </CardContent>
     </Card>
   );
