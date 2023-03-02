@@ -9,7 +9,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import Bob from "../../assets/garden3.jpg";
+import BlogPost from "../../components/BlogPost/BlogPost";
 
 const BlogPage = (props) => {
   return (
@@ -30,25 +30,8 @@ const BlogPage = (props) => {
           gap: "3rem",
         }}
       >
-        <Box>
-          <Box
-            sx={{
-              padding: "1rem",
-              height: "300px",
-              width: "900px",
-              mb: "1rem",
-              backgroundImage: `url(${Bob})`,
-            }}
-          ></Box>
-          <Box sx={{ padding: "1rem" }}>
-            <Typography variant="h4" mb={1}>
-              This is the post title!
-            </Typography>
-            <Typography variant="overline" gutterBottom>
-              And a very small date
-            </Typography>
-            <Typography variant="body1">And the main content!</Typography>
-          </Box>
+        <Box flexGrow={2}>
+          <BlogPost />
         </Box>
         <Box
           sx={{
@@ -57,6 +40,7 @@ const BlogPage = (props) => {
           }}
         >
           <Box
+            flexGrow={1}
             sx={{
               border: "1px solid",
               borderRadius: "10px",

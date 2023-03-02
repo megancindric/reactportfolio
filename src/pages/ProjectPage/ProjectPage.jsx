@@ -39,7 +39,7 @@ const ProjectPage = (props) => {
       <Typography variant="h3" sx={{ mb: "2rem" }}>
         My Portfolio
       </Typography>
-      <Box sx={{ display: "flex", flexWrap: "row", gap: "1rem" }}>
+      <Box sx={{ display: "flex", flexWrap: "wrap", gap: "1rem" }}>
         {projects.map((project) => (
           <ProjectCard project={project} />
         ))}

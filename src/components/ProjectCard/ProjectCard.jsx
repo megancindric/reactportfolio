@@ -9,7 +9,7 @@ import React from "react";
 
 const ProjectCard = ({ project }) => {
   return (
-    <Card sx={{ maxWidth: 350 }}>
+    <Card sx={{ maxWidth: 325 }}>
       <CardContent>
         <Typography variant="h5" gutterBottom>
           {project.name}
