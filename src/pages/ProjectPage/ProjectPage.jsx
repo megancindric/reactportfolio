@@ -27,24 +27,33 @@ const ProjectPage = (props) => {
       repository: "https://github.com/megancindric/reactportfolio",
     },
     {
-      name: "Walkabout",
+      name: "Video Game Analysis",
       description:
-        "An application designed to 'gamify' walking by assigning points to users for encountering wildlife, landmarks, or other interesting things!",
-      technologies: ["Python", "JavaScript"],
+        "An exploratory analysis of trends and patterns found in video game sales from the past 4 decades.  Utilizes ReCharts to visualize trends in a dashboard format.",
+      technologies: ["CSharp", "DotNet", "MySql", "JavaScript", "React"],
       repository: "http://www.google.com",
     },
   ];
   return (
-    <Container sx={{ mt: "1rem" }}>
+    <Box sx={{ margin: "2rem", padding: "2rem" }}>
       <Typography variant="h3" sx={{ mb: "2rem" }}>
         My Portfolio
       </Typography>
-      <Box sx={{ display: "flex", flexWrap: "wrap", gap: "2rem" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          gap: "2rem",
+          margin: 0,
+          padding: 0,
+        }}
+      >
         {projects.map((project) => (
           <ProjectCard project={project} />
         ))}
       </Box>
-    </Container>
+    </Box>
   );
 };
 

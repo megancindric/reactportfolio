@@ -7,6 +7,9 @@ import { ReactComponent as Selenium } from "../../assets/icons/selenium.svg";
 import { ReactComponent as Jupyter } from "../../assets/icons/jupyter.svg";
 import { ReactComponent as Mui } from "../../assets/icons/mui.svg";
 import { ReactComponent as Django } from "../../assets/icons/django.svg";
+import { ReactComponent as CSharp } from "../../assets/icons/csharp.svg";
+import { ReactComponent as DotNet } from "../../assets/icons/dotnet.svg";
+import { ReactComponent as MySql } from "../../assets/icons/mysql.svg";
 
 const TechIcon = (props) => {
   const Icons = {
@@ -18,9 +21,12 @@ const TechIcon = (props) => {
     Selenium: Selenium,
     Pandas: Pandas,
     Django: Django,
+    CSharp: CSharp,
+    DotNet: DotNet,
+    MySql: MySql,
   };
   const Icon = Icons[props.tech];
-  return <Icon height="3rem" />;
+  return <Icon height={50} />;
 };
 
 export default TechIcon;
