@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'gillsans':["Gill Sans","Gill Sans MT","Calibri","sans-serif"]
+      }
+    },
   },
   plugins: [],
 }

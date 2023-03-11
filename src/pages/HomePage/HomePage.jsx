@@ -1,47 +1,28 @@
 import React from "react";
-import { Avatar, Box, Container, Typography } from "@mui/material";
 import ProfilePic from "../../assets/profile.jpg";
 import Kermit from "../../assets/kermit.png";
 const HomePage = (props) => {
   return (
-    <Container
-      sx={{
-        display: "flex",
-        margin: "3rem",
-        justifyContent: "center",
-        alignContent: "center",
-        alignItems: "center",
-        gap: "1rem",
-      }}
-    >
-      <Box
-        sx={{
-          flexGrow: 1,
-          alignContent: "center",
-          textAlign: "justify",
-          padding: "8rem",
-        }}
-      >
-        <Typography variant="h2" gutterBottom>
-          Greeting Message!
-        </Typography>
-        <Typography variant="body1">
+    <div className="flex flex-row justify-center h-screen items-center bg-gradient-to-b from-white to-emerald-400 gap-10">
+      <div className="flex flex-col gap-12 justify-center text-center w-1/4 border p-10 rounded-xl drop-shadow-xl bg-white">
+        <p className=" text-6xl font-sans ">Hello! 👋</p>
+        <p className=" text-lg text-justify  font-sans pt-2">
           This is a little about me blurb Lorem ipsum dolor sit amet,
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur.{" "}
-        </Typography>
-      </Box>
-      <Box sx={{ flexGrow: 1, alignContent: "center" }}>
-        <Avatar
+        </p>
+      </div>
+      <div className="flex ">
+        <img
+          className=" h-96 rounded-full w-96 object-cover m-10 drop-shadow-2xl"
           alt="Profile picture for Megan Cindric"
           src={ProfilePic}
-          sx={{ width: 300, height: 300 }}
         />
-      </Box>
-    </Container>
+      </div>
+    </div>
   );
 };
 
