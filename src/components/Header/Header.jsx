@@ -1,5 +1,4 @@
-import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
-import ForestIcon from "@mui/icons-material/Forest";
+import { ReactComponent as Evergreen } from "../../assets/icons/evergreen.svg";
 import { useNavigate } from "react-router-dom";
 import React from "react";
 
@@ -11,51 +10,38 @@ const Header = (post) => {
   ];
   const navigate = useNavigate();
   return (
-    <AppBar position="static">
-      <Toolbar disableGutters>
-        <ForestIcon
-          sx={{ display: "flex", ml: 2 }}
+    <div className="h-20 bg-emerald-700 flex flex-row justify-between">
+      <div className="flex items-center px-3">
+        <Evergreen fill="white" className=" h-10" />
+        <h1
+          className="font-bold text-4xl text-teal-50"
           onClick={() => navigate(`/`)}
-        />
-        <Typography
-          variant="h6"
-          noWrap
-          component="a"
-          href="/"
-          sx={{
-            mr: 2,
-            display: "flex",
-            fontFamily: "Segoe UI",
-            fontWeight: 700,
-            letterSpacing: ".3rem",
-            color: "inherit",
-            textDecoration: "none",
-          }}
         >
           Code & Explore
-        </Typography>
+        </h1>
+      </div>
 
-        <Box
-          sx={{
-            flexGrow: 1,
-            display: "flex",
-            justifyContent: "flex-end",
-            mr: 3,
-          }}
+      <div className="flex flex-row space-x-10 items-center px-14">
+        <div
+          onClick={() => navigate(`/projects`)}
+          className="flex  text-2xl text-teal-50 border p-2 rounded-lg  border-teal-50"
         >
-          {pages.map((page) => (
-            <Button
-              size="large"
-              key={page.link}
-              onClick={() => navigate(`/${page.link}`)}
-              sx={{ my: 2, color: "white", display: "block" }}
-            >
-              {page.button}
-            </Button>
-          ))}
-        </Box>
-      </Toolbar>
-    </AppBar>
+          Projects
+        </div>
+        <div
+          onClick={() => navigate(`/blog`)}
+          className="flex  text-2xl text-teal-50 border p-2 rounded-lg  border-teal-50"
+        >
+          Blog
+        </div>
+        <div
+          onClick={() => navigate(`/about`)}
+          className="flex  text-2xl text-teal-50 border p-2 rounded-lg  border-teal-50"
+        >
+          About Me
+        </div>
+      </div>
+    </div>
   );
 };
 
