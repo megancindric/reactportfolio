@@ -1,5 +1,3 @@
-import { Button, Card, CardContent, Typography } from "@mui/material";
-import { Box } from "@mui/system";
 import React from "react";
 
 import TechIcon from "../TechIcon/TechIcon";
@@ -21,7 +19,7 @@ const ProjectCard = ({ project }) => {
       </p>
 
       <a href={project.repository} target="+blank">
-        <button className=" text-center rounded-lg p-2 bg-emerald-100 border-emerald-700 drop-shadow-sm m-3 font-semibold">
+        <button className=" text-center rounded-lg p-3 text-white bg-emerald-400 border-emerald-700 drop-shadow-sm m-3 font-semibold transition-all duration-100 hover:scale-110 ">
           Learn More!
         </button>
       </a>
