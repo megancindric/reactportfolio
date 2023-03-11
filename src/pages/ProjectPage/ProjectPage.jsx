@@ -1,5 +1,3 @@
-import { Card, Container, Typography } from "@mui/material";
-import { Box } from "@mui/system";
 import React from "react";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
@@ -13,14 +11,14 @@ const ProjectPage = (props) => {
       repository: "http://www.google.com",
     },
     {
-      name: "Roller Coaster Analysis",
+      name: "Coaster Analysis",
       description:
         "An exploratory analysis investigating the most profitable location for a future amusement park.  The process included web scraping, data munging, and presentation of findings in the form of a Tableau Story.",
       technologies: ["Jupyter", "Python", "Pandas", "Selenium"],
       repository: "http://www.google.com",
     },
     {
-      name: "React Portfolio Site",
+      name: "Portfolio Site",
       description:
         "The very website you're looking at now!  An ongoing passion project that I plan to regularly update with new features & improved user experience.",
       technologies: ["JavaScript", "React", "MUI"],
@@ -35,25 +33,23 @@ const ProjectPage = (props) => {
     },
   ];
   return (
-    <Box sx={{ margin: "2rem", padding: "2rem" }}>
-      <Typography variant="h3" sx={{ mb: "2rem" }}>
-        My Portfolio
-      </Typography>
-      <Box
-        sx={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          gap: "2rem",
-          margin: 0,
-          padding: 0,
-        }}
+    <div
+      className="bg-gradient-to-b from-white to-emerald-400 gap-10 h-screen flex flex-col p-10"
+      sx={{ margin: "2rem", padding: "2rem" }}
+    >
+      <h3
+        className=" text-7xl font-gillsans text-center drop-shadow-lg pb-6"
+        variant="h3"
+        sx={{ mb: "2rem" }}
       >
+        Projects
+      </h3>
+      <div className="flex flex-wrap justify-center gap-12 ">
         {projects.map((project) => (
           <ProjectCard project={project} />
         ))}
-      </Box>
-    </Box>
+      </div>
+    </div>
   );
 };
 

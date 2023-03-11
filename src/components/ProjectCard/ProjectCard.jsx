@@ -6,26 +6,26 @@ import TechIcon from "../TechIcon/TechIcon";
 
 const ProjectCard = ({ project }) => {
   return (
-    <Card sx={{ maxWidth: 300, height: 400 }}>
-      <Box align="center" padding="1rem" height={400}>
-        <Typography variant="h5" align="center" mb="1rem">
-          {project.name}
-        </Typography>
+    <div className=" max-w-sm max-h-lg bg-white w-96 drop-shadow-2xl px-8 pt-6 flex flex-col items-center rounded-3xl">
+      <h5 className=" text-center text-4xl font-gillsans text-emerald-800">
+        {project.name}
+      </h5>
+      <hr className=" h-0.5 bg-emerald-900 border-0 mt-6 mb-4 w-full" />
+      <div className="flex flex-row justify-center gap-3 p-4">
         {project.technologies.map((tech) => (
           <TechIcon tech={tech} />
         ))}
-        <Typography variant="body1" gutterBottom mt="1rem">
-          {project.description}
-        </Typography>
-        <Box justifyContent="center">
-          <a href={project.repository} target="+blank">
-            <Button size="large" variant="outlined">
-              Learn More!
-            </Button>
-          </a>
-        </Box>
-      </Box>
-    </Card>
+      </div>
+      <p className=" font-gillsans border text-justify text-lg">
+        {project.description}
+      </p>
+
+      <a href={project.repository} target="+blank">
+        <button className=" text-center rounded-lg p-2 bg-emerald-100 border-emerald-700 drop-shadow-sm m-3 font-semibold">
+          Learn More!
+        </button>
+      </a>
+    </div>
   );
 };
 

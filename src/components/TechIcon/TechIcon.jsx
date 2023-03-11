@@ -26,7 +26,7 @@ const TechIcon = (props) => {
     MySql: MySql,
   };
   const Icon = Icons[props.tech];
-  return <Icon height={50} />;
+  return <Icon className="h-14" />;
 };
 
 export default TechIcon;
