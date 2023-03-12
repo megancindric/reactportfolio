@@ -33,15 +33,8 @@ const ProjectPage = (props) => {
     },
   ];
   return (
-    <div
-      className="bg-gradient-to-b from-white to-emerald-400 gap-10 h-screen flex flex-col p-10"
-      sx={{ margin: "2rem", padding: "2rem" }}
-    >
-      <h3
-        className=" text-7xl font-gillsans text-center drop-shadow-lg pb-6"
-        variant="h3"
-        sx={{ mb: "2rem" }}
-      >
+    <div className="bg-gradient-to-b from-white to-emerald-400 gap-10 h-screen flex flex-col p-10">
+      <h3 className=" text-7xl font-gillsans text-center drop-shadow-lg pb-6">
         Projects
       </h3>
       <div className="flex flex-wrap justify-center gap-12 ">
