@@ -4,10 +4,17 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard";
 const ProjectPage = (props) => {
   const projects = [
     {
-      name: "Timbr",
+      name: "Portfolio Site",
       description:
-        "A full-stack application aimed to teach people about the local flora of their area!  Future plans are to utilize React Native to build a mobile version of the application!",
-      technologies: ["Python", "Django", "JavaScript", "React"],
+        "The very website you're looking at now!  An ongoing passion project that I plan to regularly update with new features & improved user experience.  Currently, I am refactoring my website to use TailwindCSS!",
+      technologies: ["JavaScript", "ReactJs", "Tailwind"],
+      repository: "https://github.com/megancindric/reactportfolio",
+    },
+    {
+      name: "Video Game Analysis",
+      description:
+        "An interactive dashboard exploring trends and patterns found in video game sales from the past 4 decades.  Utilizes ReCharts to visualize trends in a dashboard format.",
+      technologies: ["CSharp", "DotNet", "MySql", "ReactJs", "Tailwind"],
       repository: "http://www.google.com",
     },
     {
@@ -17,18 +24,12 @@ const ProjectPage = (props) => {
       technologies: ["Jupyter", "Python", "Pandas", "Selenium"],
       repository: "http://www.google.com",
     },
+
     {
-      name: "Portfolio Site",
+      name: "Timbr",
       description:
-        "The very website you're looking at now!  An ongoing passion project that I plan to regularly update with new features & improved user experience.",
-      technologies: ["JavaScript", "React", "MUI"],
-      repository: "https://github.com/megancindric/reactportfolio",
-    },
-    {
-      name: "Video Game Analysis",
-      description:
-        "An exploratory analysis of trends and patterns found in video game sales from the past 4 decades.  Utilizes ReCharts to visualize trends in a dashboard format.",
-      technologies: ["CSharp", "DotNet", "MySql", "JavaScript", "React"],
+        "A full-stack application aimed to teach people about the local flora of their area!  Future plans are to utilize React Native to build a mobile version of the application!",
+      technologies: ["Python", "Django", "JavaScript", "ReactJs"],
       repository: "http://www.google.com",
     },
   ];
