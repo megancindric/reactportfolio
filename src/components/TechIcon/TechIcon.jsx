@@ -33,11 +33,12 @@ const TechIcon = (props) => {
     GitHub: GitHub,
     Email: Email,
     Tailwind: Tailwind,
-    Docker,
-    Docker,
+    Docker: Docker,
   };
   const Icon = Icons[props.tech];
-  return <Icon className="h-14" />;
+  return (
+    <Icon className="h-16 w-16 min-w-[64px] min-h-[64px] bg-white rounded-xl drop-shadow-2xl p-2" />
+  );
 };
 
 export default TechIcon;
