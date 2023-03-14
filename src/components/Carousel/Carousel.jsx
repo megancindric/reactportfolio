@@ -30,15 +30,15 @@ const Carousel = () => {
     return () => clearInterval(intervalId);
   }, [content.length]);
   return (
-    <div className="flex flex-1   text-emerald-800 justify-center items-center">
+    <div className="flex flex-1   text-emerald-800  items-center">
       <div
         className={` absolute carousel-item w-screen max-w-xl p-4 transition-opacity ${
           currentIndex === 0 ? "opacity-100" : "opacity-0"
         }`}
       >
         <div className=" gap-6  flex-col">
-          <h3 className="  text-5xl">Hello, I'm Megan! 👋</h3>
-          <hr className=" h-0.5 bg-emerald-800 border-0 mt-6 mb-10 self-center w-full" />
+          <h3 className="text-5xl text-center">Hello, I'm Megan! 👋</h3>
+          <hr className=" h-0.5 bg-emerald-800 border-0 my-6 self-center w-full" />
 
           <p className=" text-2xl text-justify">
             I'm a Wisconsin-based Software Developer who enjoys coding, coffee,
@@ -46,7 +46,7 @@ const Carousel = () => {
             as a fusion of all of my passions and interests - coding, writing,
             connecting, and trying new things!
           </p>
-          <p className="text-3xl pt-4">Thanks for stopping by!</p>
+          <p className="text-3xl pt-8">Thanks for stopping by!</p>
         </div>
       </div>
       <div
@@ -55,7 +55,7 @@ const Carousel = () => {
         }`}
       >
         <div className=" flex flex-col">
-          <h1 className="text-5xl text-center "> What I'm Learning...</h1>
+          <h1 className="text-5xl text-center"> What I'm Learning...</h1>
           <hr className=" h-0.5 bg-emerald-800 border-0 mt-6 mb-10 self-center w-full" />
 
           <ul className="text-3xl list-disc ">
@@ -74,7 +74,7 @@ const Carousel = () => {
       >
         <div className="">
           <h1 className="text-5xl text-center">My Toolbelt</h1>
-          <hr className=" h-0.5 bg-emerald-800 border-0 mt-6 mb-10 w-full " />
+          <hr className=" h-0.5 bg-emerald-800 border-0 my-6 w-full " />
           <div className="flex flex-row flex-wrap gap-6 pt-4 justify-center">
             {techStack.map((tech, index) => (
               <TechIcon key={index} tech={tech} />
@@ -89,8 +89,8 @@ const Carousel = () => {
         }`}
       >
         <div className="">
-          <h1 className="text-5xl pt-3">Let's Get in Touch!</h1>
-          <hr className=" h-0.5 bg-emerald-800 border-0 mt-6 mb-6 w-full " />
+          <h1 className="text-5xl text-center">Let's Get in Touch!</h1>
+          <hr className=" h-0.5 bg-emerald-800 border-0 my-6 w-full " />
 
           <p className="text-2xl text-justify py-6">
             I'm always looking for new opportunities to connect with others,
@@ -103,20 +103,20 @@ const Carousel = () => {
               target="+blank"
               className="transition-all duration-100 hover:scale-110"
             >
-              <TechIcon tech="LinkedIn" />
+              <TechIcon tech="LinkedIn" className="h-20" />
             </a>
             <a
               href="https://github.com/megancindric"
               target="+blank"
               className="transition-all duration-100 hover:scale-110"
             >
-              <TechIcon tech="GitHub" />
+              <TechIcon tech="GitHub" className="h-20" />
             </a>
             <a
               href="mailto:megancindric@gmail.com"
               className="transition-all duration-100 hover:scale-110"
             >
-              <TechIcon tech="Email" />
+              <TechIcon tech="Email" className="h-20" />
             </a>
           </div>
         </div>
