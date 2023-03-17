@@ -6,11 +6,10 @@
 
 ### :thought_balloon: A few ideas I am currently working on :thought_balloon:
 
-- Completion of About Me page
+- Adding manual navigation to About Me carousel
 - Completion of Blog page, with NotionAPI integration
 - Deploying application to AWS via Docker
 - Implementing light/dark mode toggle
 - Creating an additional gallery page for showcasing artwork
-- Updating existing styling to TailwindCSS
 
 #### Check back soon - I can't wait to show you what I have planned next! :smile:
