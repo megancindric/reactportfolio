@@ -1,14 +1,4 @@
 import React from "react";
-import {
-  Box,
-  Container,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
-  TextField,
-  Typography,
-} from "@mui/material";
 import BlogPost from "../../components/BlogPost/BlogPost";
 
 const BlogPage = (props) => {
@@ -19,56 +9,35 @@ const BlogPage = (props) => {
     "A Quiet Life",
   ];
   return (
-    <>
-      <Container>
-        {" "}
-        <Typography variant="h3" sx={{ mt: "2rem" }}>
-          This is the blog!
-        </Typography>
-      </Container>
+    <div className="bg-gradient-to-b from-white to-emerald-400 gap-10 h-screen flex flex-col p-10 items-center ">
+      <h1 className=" text-7xl font-gillsans text-center drop-shadow-lg pb-6">
+        This is the blog!
+      </h1>
 
-      <Container
-        sx={{
-          display: "flex",
-          paddingTop: "2rem",
-
-          justifyContent: "space-between",
-          gap: "3rem",
-        }}
-      >
-        <Box flexGrow={2}>
+      <div className="flex flex-row gap-14 justify-between w-2/3">
+        <div flexGrow={2}>
           <BlogPost />
-        </Box>
-        <Box
+        </div>
+        <div
           sx={{
             minWidth: 300,
           }}
         >
-          <Box
-            sx={{
-              padding: "1rem",
-              border: "2px solid",
-              borderRadius: "10px",
-              borderColor: "#43A047",
-              height: "100%",
-            }}
-          >
-            <Typography variant="h5" textAlign={"center"} gutterBottom>
+          <div className=" rounded-xl px-8 py-6 bg-white drop-shadow-xl w-72">
+            <h3 className="text-3xl text-center font-gillsans font-semibold">
               Past Entries
-            </Typography>
-            <List>
+            </h3>
+            <ul className="list-none p-2">
               {fakeEntries.map((entry) => (
-                <ListItem disablePadding>
-                  <ListItemButton>
-                    <ListItemText primary={entry} />
-                  </ListItemButton>
-                </ListItem>
+                <li className="list-none text-xl py-6 font-gillsans  transition-all duration-100 hover:scale-110">
+                  {entry}
+                </li>
               ))}
-            </List>
-          </Box>
-        </Box>
-      </Container>
-    </>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
