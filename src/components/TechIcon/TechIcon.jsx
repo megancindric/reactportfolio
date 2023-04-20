@@ -15,6 +15,7 @@ import { ReactComponent as GitHub } from "../../assets/icons/github.svg";
 import { ReactComponent as Email } from "../../assets/icons/mail.svg";
 import { ReactComponent as Tailwind } from "../../assets/icons/tailwind.svg";
 import { ReactComponent as Docker } from "../../assets/icons/docker.svg";
+import { ReactComponent as Flask } from "../../assets/icons/flask.svg";
 
 const TechIcon = (props) => {
   const Icons = {
@@ -34,6 +35,7 @@ const TechIcon = (props) => {
     Email: Email,
     Tailwind: Tailwind,
     Docker: Docker,
+    Flask: Flask,
   };
   const Icon = Icons[props.tech];
   return (

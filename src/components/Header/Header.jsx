@@ -10,7 +10,7 @@ const Header = (post) => {
   ];
   const navigate = useNavigate();
   return (
-    <div className="h-20 bg-emerald-600 flex flex-row justify-between">
+    <div className="h-24 bg-emerald-600 flex flex-row justify-between">
       <div className="flex items-center px-3 transition-all duration-100 hover:scale-110">
         <Evergreen fill="white" className=" h-10" />
         <h1

@@ -18,6 +18,7 @@ const Carousel = () => {
     "Tailwind",
     "MySql",
     "Django",
+    "Flask",
     "Docker",
     "GitHub",
   ];

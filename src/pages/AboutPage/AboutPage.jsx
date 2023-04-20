@@ -11,6 +11,7 @@ const AboutPage = (props) => {
     "Tailwind",
     "MySql",
     "Django",
+    "Flask",
     "Docker",
     "GitHub",
   ];
