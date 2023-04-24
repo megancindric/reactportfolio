@@ -16,8 +16,8 @@ const AboutPage = (props) => {
     "GitHub",
   ];
   return (
-    <div className="bg-gradient-to-b from-white to-emerald-400 h-screen flex flex-col py-10 gap-20 text-emerald-900 font-gillsans">
-      <h1 className="text-7xl text-center drop-shadow-lg pb-20">About Me</h1>
+    <div className=" bg-emerald-50 h-screen flex flex-col py-10 gap-20  font-gillsans">
+      <h1 className="text-7xl text-center pb-20">About Me</h1>
       <div className="flex flex-row">
         <div className="flex justify-center flex-1">
           <img

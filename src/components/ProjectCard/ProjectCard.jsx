@@ -5,10 +5,8 @@ import TechIcon from "../TechIcon/TechIcon";
 const ProjectCard = ({ project }) => {
   return (
     <div className=" max-w-sm max-h-lg bg-white w-96 drop-shadow-2xl px-8 pt-6 flex flex-col justify-between flex-1 items-center rounded-3xl">
-      <h5 className=" text-center text-4xl font-gillsans text-emerald-800">
-        {project.name}
-      </h5>
-      <hr className=" h-0.5 bg-emerald-900 border-0 mt-6 mb-4 w-full" />
+      <h5 className=" text-center text-4xl font-gillsans">{project.name}</h5>
+      <hr className=" h-0.5 bg-black border-0 mt-6 mb-4 w-full" />
       <div className="flex flex-row justify-center gap-3 p-6">
         {project.technologies.map((tech) => (
           <TechIcon tech={tech} />
