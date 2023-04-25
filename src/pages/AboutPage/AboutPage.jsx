@@ -1,5 +1,6 @@
 import React from "react";
 import ProfilePic from "../../assets/profile.jpg";
+import Kermit from "../../assets/kermit.png";
 import Carousel from "../../components/Carousel/Carousel";
 
 const AboutPage = (props) => {
@@ -23,7 +24,7 @@ const AboutPage = (props) => {
           <img
             className=" h-96 rounded-full w-96 object-cover drop-shadow-2xl"
             alt="Profile for Megan Cindric"
-            src={ProfilePic}
+            src={Kermit}
           />
         </div>
         <Carousel />

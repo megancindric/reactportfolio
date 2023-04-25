@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import CarouselItem from "./CarouselItem";
 import TechIcon from "../TechIcon/TechIcon";
+import AboutSlide from "./AboutSlide";
+import LearningSlide from "./LearningSlide";
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const content = [
@@ -9,6 +11,7 @@ const Carousel = () => {
     "What I'm Learning",
     "My Toolbelt",
     "Let's Get in Touch",
+    "test",
   ];
   const techStack = [
     "Python",
@@ -31,42 +34,20 @@ const Carousel = () => {
     return () => clearInterval(intervalId);
   }, [content.length]);
   return (
-    <div className="flex flex-1   text-emerald-800  items-center">
+    <div className="flex flex-1 items-center">
       <div
         className={` absolute carousel-item w-screen max-w-xl p-4 transition-opacity ${
           currentIndex === 0 ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div className=" gap-6  flex-col">
-          <h3 className="text-5xl text-center">Hello, I'm Megan! 👋</h3>
-          <hr className=" h-0.5 bg-emerald-800 border-0 my-6 self-center w-full" />
-
-          <p className=" text-2xl text-justify">
-            I'm a Wisconsin-based Software Developer who enjoys coding, coffee,
-            and spending time in the great outdoors. I'm building this website
-            as a fusion of all of my passions and interests - coding, writing,
-            connecting, and trying new things!
-          </p>
-          <p className="text-3xl pt-8">Thanks for stopping by!</p>
-        </div>
+        <AboutSlide />
       </div>
       <div
         className={`absolute carousel-item w-screen max-w-xl p-4 transition-opacity ${
           currentIndex === 1 ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div className=" flex flex-col">
-          <h1 className="text-5xl text-center"> What I'm Learning...</h1>
-          <hr className=" h-0.5 bg-emerald-800 border-0 mt-6 mb-10 self-center w-full" />
-
-          <ul className="text-3xl list-disc ">
-            <li className="p-3">Tailwind CSS</li>
-            <li className="p-3">C#.NET, .NET Core 5.0, and .NET Framework</li>
-            <li className="p-3">Next.JS</li>
-            <li className="p-3">TypeScript</li>
-            <li className="p-4 list-none text-right"> ....and more!</li>
-          </ul>
-        </div>
+        <LearningSlide />
       </div>
       <div
         className={`absolute carousel-item w-screen max-w-xl p-4 transition-opacity ${
@@ -122,6 +103,14 @@ const Carousel = () => {
           </div>
         </div>
       </div>
+      <CarouselItem
+        item={{
+          title: "This is a test",
+          mainContent: "This is a test this is a test",
+        }}
+        index={4}
+        currentIndex={currentIndex}
+      />
     </div>
   );
 };

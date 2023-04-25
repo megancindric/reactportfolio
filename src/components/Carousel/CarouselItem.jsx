@@ -3,7 +3,7 @@ import React from "react";
 const CarouselItem = ({ item, index, currentIndex }) => {
   return (
     <div
-      className={`carousel-item w-screen max-w-lg p-4 transition-opacity  text-emerald-800 ${
+      className={`carousel-item w-screen max-w-lg p-4 transition-opacity ${
         index === currentIndex ? "opacity-100" : "opacity-0"
       }`}
     >
