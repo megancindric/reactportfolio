@@ -2,9 +2,9 @@ import React from "react";
 import TechIcon from "../TechIcon/TechIcon";
 const ContactSlide = (props) => {
   return (
-    <div className="">
+    <div>
       <h1 className="text-5xl text-center">Let's Get in Touch!</h1>
-      <hr className=" h-0.5 bg-emerald-800 border-0 my-6 w-full " />
+      <hr className=" h-0.5 bg-black border-0 my-6 w-full " />
 
       <p className="text-2xl text-justify py-6">
         I'm always looking for new opportunities to connect with others,

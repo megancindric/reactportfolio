@@ -4,7 +4,7 @@ const AboutSlide = (props) => {
   return (
     <div className=" gap-6  flex-col">
       <h3 className="text-5xl text-center">Hello, I'm Megan! 👋</h3>
-      <hr className=" h-0.5 bg-emerald-800 border-0 my-6 self-center w-full" />
+      <hr className=" h-0.5 bg-black border-0 my-6 self-center w-full" />
 
       <p className=" text-2xl text-justify">
         I'm a Colorado-based Software Developer who enjoys coding, coffee, and

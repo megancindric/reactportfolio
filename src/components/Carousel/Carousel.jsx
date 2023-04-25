@@ -7,7 +7,7 @@ import LearningSlide from "./LearningSlide";
 import ToolbeltSlide from "./ToolbeltSlide";
 import ContactSlide from "./ContactSlide";
 const Carousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(3);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const content = [
     "About Me",
     "What I'm Learning",
@@ -15,14 +15,14 @@ const Carousel = () => {
     "Let's Get in Touch",
   ];
 
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setCurrentIndex((currentIndex) =>
-  //       currentIndex === content.length - 1 ? 0 : currentIndex + 1
-  //     );
-  //   }, 5000);
-  //   return () => clearInterval(intervalId);
-  // }, [content.length]);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((currentIndex) =>
+        currentIndex === content.length - 1 ? 0 : currentIndex + 1
+      );
+    }, 5000);
+    return () => clearInterval(intervalId);
+  }, [content.length]);
   return (
     <div className="flex flex-1 items-center">
       <CarouselItem

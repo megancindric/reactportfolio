@@ -18,8 +18,8 @@ const AboutPage = (props) => {
   ];
   return (
     <div className=" bg-emerald-50 h-screen flex flex-col py-10 gap-20  font-gillsans">
-      <h1 className="text-7xl text-center pb-20">About Me</h1>
-      <div className="flex flex-row">
+      <h1 className="text-7xl text-center pb-16">About Me</h1>
+      <div className="flex flex-row justify-around">
         <div className="flex justify-center flex-1">
           <img
             className=" h-96 rounded-full w-96 object-cover drop-shadow-2xl"
