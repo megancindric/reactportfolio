@@ -4,7 +4,7 @@ const LearningSlide = () => {
   return (
     <div className=" flex flex-col">
       <h1 className="text-5xl text-center"> What I'm Learning...</h1>
-      <hr className=" h-0.5 bg-emerald-800 border-0 mt-6 mb-10 self-center w-full" />
+      <hr className=" h-0.5 bg-black border-0 mt-6 mb-10 self-center w-full" />
 
       <ul className="text-3xl list-disc ">
         <li className="p-3">Tailwind CSS</li>

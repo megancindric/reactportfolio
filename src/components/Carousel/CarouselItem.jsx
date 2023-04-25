@@ -1,14 +1,13 @@
 import React from "react";
 
-const CarouselItem = ({ item, index, currentIndex }) => {
+const CarouselItem = ({ slide, index, currentIndex }) => {
   return (
     <div
-      className={`carousel-item w-screen max-w-lg p-4 transition-opacity ${
+      className={`absolute carousel-item w-screen max-w-xl h-auto p-6 transition-opacity border ${
         index === currentIndex ? "opacity-100" : "opacity-0"
       }`}
     >
-      <h1 className=" text-5xl">{item.title}</h1>
-      <p className="text-lg">{item.mainContent}</p>
+      {slide}
     </div>
   );
 };
