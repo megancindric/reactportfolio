@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import BlogPage from "./pages/BlogPage/BlogPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import ProjectPage from "./pages/ProjectPage/ProjectPage";
+import ArtPage from "./pages/ArtPage/ArtPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/projects" element={<ProjectPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/art" element={<ArtPage />} />
       </Routes>
       <div className="container"></div>
     </>

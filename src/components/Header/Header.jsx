@@ -35,6 +35,12 @@ const Header = (post) => {
           Blog
         </div>
         <div
+          onClick={() => navigate(`/art`)}
+          className="flex  text-3xl text-teal-50  p-2   border-teal-50 transition-all duration-100 hover:scale-110"
+        >
+          Art
+        </div>
+        <div
           onClick={() => navigate(`/about`)}
           className="flex  text-3xl text-teal-50  p-2   border-teal-50 transition-all duration-100 hover:scale-110"
         >
