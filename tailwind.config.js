@@ -6,7 +6,10 @@ module.exports = {
       fontFamily: {
         gillsans: ["Gill Sans", "Gill Sans MT", "Calibri", "sans-serif"],
       },
-      colors: {},
+      colors: {
+        purple: "#5e548e",
+        lightPurple: "#fbf7ff",
+      },
     },
   },
   plugins: [],

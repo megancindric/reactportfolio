@@ -34,7 +34,7 @@ const ProjectPage = (props) => {
     },
   ];
   return (
-    <div className="bg-orange-50 gap-10 h-screen flex flex-col p-10">
+    <div className="bg-lightPurple gap-10 h-screen flex flex-col p-10">
       <h3 className=" text-7xl font-gillsans text-center pb-6">Projects</h3>
       <div className="flex flex-wrap justify-center gap-12 ">
         {projects.map((project) => (
