@@ -9,7 +9,7 @@ const BlogPage = (props) => {
     "Placeholder 4",
   ];
   return (
-    <div className="bg-emerald-50 gap-10 h-screen flex flex-col p-10 items-center ">
+    <div className="bg-orange-50 gap-10 h-screen flex flex-col p-10 items-center ">
       <h1 className=" text-7xl font-gillsans text-center pb-6">
         This is the blog!
       </h1>

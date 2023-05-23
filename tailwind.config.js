@@ -4,9 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'gillsans':["Gill Sans","Gill Sans MT","Calibri","sans-serif"]
-      }
+        gillsans: ["Gill Sans", "Gill Sans MT", "Calibri", "sans-serif"],
+      },
+      colors: {},
     },
   },
   plugins: [],
-}
+};
