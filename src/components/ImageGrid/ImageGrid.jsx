@@ -16,7 +16,7 @@ const ImageGrid = () => {
     setShowModal(false);
   };
   return (
-    <div className="flex flex-row justify-around">
+    <div className="flex flex-row justify-around pb-10">
       <div className="flex justify-center flex-1 flex-wrap gap-4">
         <img
           className=" h-80 w-80 object-cover drop-shadow-2xl"
@@ -28,36 +28,67 @@ const ImageGrid = () => {
           className=" h-80 w-80 object-cover drop-shadow-2xl"
           alt="Profile for Megan Cindric"
           src={Kermit}
-        />
+          onClick={() => openModal(Kermit)}
+        />{" "}
         <img
           className=" h-80 w-80 object-cover drop-shadow-2xl"
           alt="Profile for Megan Cindric"
           src={Kermit}
-        />
+          onClick={() => openModal(Kermit)}
+        />{" "}
         <img
           className=" h-80 w-80 object-cover drop-shadow-2xl"
           alt="Profile for Megan Cindric"
           src={Kermit}
-        />
+          onClick={() => openModal(Kermit)}
+        />{" "}
         <img
           className=" h-80 w-80 object-cover drop-shadow-2xl"
           alt="Profile for Megan Cindric"
           src={Kermit}
-        />
+          onClick={() => openModal(Kermit)}
+        />{" "}
         <img
           className=" h-80 w-80 object-cover drop-shadow-2xl"
           alt="Profile for Megan Cindric"
           src={Kermit}
-        />
+          onClick={() => openModal(Kermit)}
+        />{" "}
         <img
           className=" h-80 w-80 object-cover drop-shadow-2xl"
           alt="Profile for Megan Cindric"
           src={Kermit}
-        />
+          onClick={() => openModal(Kermit)}
+        />{" "}
         <img
           className=" h-80 w-80 object-cover drop-shadow-2xl"
           alt="Profile for Megan Cindric"
           src={Kermit}
+          onClick={() => openModal(Kermit)}
+        />{" "}
+        <img
+          className=" h-80 w-80 object-cover drop-shadow-2xl"
+          alt="Profile for Megan Cindric"
+          src={Kermit}
+          onClick={() => openModal(Kermit)}
+        />{" "}
+        <img
+          className=" h-80 w-80 object-cover drop-shadow-2xl"
+          alt="Profile for Megan Cindric"
+          src={Kermit}
+          onClick={() => openModal(Kermit)}
+        />{" "}
+        <img
+          className=" h-80 w-80 object-cover drop-shadow-2xl"
+          alt="Profile for Megan Cindric"
+          src={Kermit}
+          onClick={() => openModal(Kermit)}
+        />{" "}
+        <img
+          className=" h-80 w-80 object-cover drop-shadow-2xl"
+          alt="Profile for Megan Cindric"
+          src={Kermit}
+          onClick={() => openModal(Kermit)}
         />
       </div>
       {showModal && <ImageModal image={selectedImage} onClose={closeModal} />}
